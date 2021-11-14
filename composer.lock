@@ -4,8 +4,38 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e77b7d594056580678fe7de815ac7270",
+    "content-hash": "6c1974d026c66f1f23bdda7542feaec5",
     "packages": [
+        {
+            "name": "hystrix/app-bundle",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../HystrixAppBundle",
+                "reference": "888a1f465fe52475afce4b84744516ccdf41904f"
+            },
+            "require": {
+                "php": ">=8.0",
+                "symfony/http-kernel": "^5.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "App\\HystrixAppBundle\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "App\\HystrixAppBundle\\Tests\\": "src/Tests/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "psr/cache",
             "version": "2.0.0",
@@ -2675,15 +2705,19 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "hystrix/app-bundle": 20
+    },
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "platform-dev": {
+        "php": "*"
+    },
+    "plugin-api-version": "2.0.0"
 }

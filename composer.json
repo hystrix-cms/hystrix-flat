@@ -1,12 +1,19 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "prefer-stable": false,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../HystrixAppBundle"
+        }
+    ],
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "hystrix/app-bundle": "dev-master",
         "symfony/console": "5.3.*",
         "symfony/dotenv": "5.3.*",
         "symfony/flex": "^1.3.1",

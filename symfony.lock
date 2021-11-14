@@ -1,4 +1,7 @@
 {
+    "hystrix/app-bundle": {
+        "version": "dev-master"
+    },
     "psr/cache": {
         "version": "2.0.0"
     },
